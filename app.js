@@ -18,14 +18,26 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    const genres = genre.split(', ');
+    const moviesByGenre = [];
+
+    movies.forEach(movie => {
+        for(let i = 0; i < genres.length; i++){
+            if(movie.genre.search(genres[i]) != -1){
+                const {title, genre, country, year} = movie;
+                moviesByGenre.push(`Title: ${title} - Genre: ${genre} - Country: ${country} - Year: ${year}`);
+                break;
+            }
+        }
+    })
+   return moviesByGenre;
 }
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
     console.log(`Only first ten movies:\n${firstTenMovies.join('\n')}\n`);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log(`Only Drama movies:\n${dramaMovies.join('\n')}\n`);
 }
 
 main();
