@@ -14,7 +14,7 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    return movies.filter((x) => x.genre === genre);
 }
 
 function main(){
@@ -23,8 +23,9 @@ function main(){
 
     console.log("**********************Only first ten movies:*******************************\n");
     console.log(firstTenMovies);
-    
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+
+    console.log("*********************Only Drama movies:***********************************\n");
+    console.log(dramaMovies);
 }
 
 main();
