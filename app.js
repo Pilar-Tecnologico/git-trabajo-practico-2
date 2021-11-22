@@ -23,6 +23,21 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+    function getMoviesWithGenre(genre){
+        const genres = genre.split(', ');
+        const moviesByGenre = [];
+    
+        movies.forEach(movie => {
+            for(let i = 0; i < genres.length; i++){
+                if(movie.genre.search(genres[i]) != -1){
+                    const {title, genre, country, year} = movie;
+                    moviesByGenre.push(`Title: ${title} - Genre: ${genre} - Country: ${country} - Year: ${year}`);
+                    break;
+                }
+            }
+        })
+       return moviesByGenre;
+    }
 }
 
 function main(){
