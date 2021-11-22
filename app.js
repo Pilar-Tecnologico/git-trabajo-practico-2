@@ -6,6 +6,14 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies(){
     //complete with your code
+    function getFirstTenMovies(){
+        let first10Movies = [];
+        for(let i = 0; i < 10; i++){
+            first10Movies.push(`Movie ${i+1}:\n${JSON.stringify(movies[i])}\n`);
+        }
+        return first10Movies;
+    }
+    
 }
 
 /**
