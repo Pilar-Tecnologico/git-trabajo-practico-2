@@ -1,20 +1,22 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * This function get the first ten movies of a movies array.
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+   const res = movies.slice(0,10).map((movie) => movie.title)
+   return res;
 }
 
 /**
- * Complete with a brief definition of what this function should do
+ * This function get movies by is genre 
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    const moviesFilted = movies.filter((movie) => movie.genre === genre)
+    return JSON.stringify(moviesFilted)
 }
 
 function main(){
