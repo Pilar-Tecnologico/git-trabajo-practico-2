@@ -18,7 +18,13 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let moviesReturn = []
+    for (let movie of movies){
+        if(movie.genre.includes(genre)){
+            moviesReturn.push(movie)
+        }  
+    }
+    return JSON.stringify(moviesReturn)
 }
 
 function main(){
