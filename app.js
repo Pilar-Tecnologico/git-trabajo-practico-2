@@ -5,7 +5,11 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    let moviesReturn = []
+    for(let i=0; i<10; i++){
+        moviesReturn.push(movies[i])
+    }
+    return JSON.stringify(moviesReturn)
 }
 
 /**
