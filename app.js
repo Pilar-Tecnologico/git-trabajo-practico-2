@@ -19,13 +19,17 @@ function getFirstTenMovies(){
 }
 
 /**
- * Complete with a brief definition of what this function should do
+ * Filter the array according to the requested gender
  * @param  {String} genre
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-    
+
+
+    const genrenew=movies.filter(movie => movie.genre == genre)
+    return genrenew
+
 }
 
 function main(){
@@ -34,7 +38,9 @@ function main(){
     console.log(`Only first ten movies:\n `);
     console.log(Object.values(firstTenMovies))
     console.log(`Only Drama movies:\n`);
-    //console.log(Object.values(dramaMovies))
+
+    console.log(Object.values(dramaMovies))
+
 }
 
 main();
