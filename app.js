@@ -1,7 +1,7 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * Get the first ten movies data of the dataset.
  * @returns {Array}
  */
 function getFirstTenMovies(){
@@ -9,7 +9,7 @@ function getFirstTenMovies(){
 }
 
 /**
- * Complete with a brief definition of what this function should do
+ * Get each movie of a genre (independent of whether it has other genres)
  * @param  {String} genre
  * @returns {Array}
  */
