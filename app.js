@@ -26,8 +26,10 @@ function getFirstTenMovies(){
  function getMoviesWithGenre(genre){
     //complete with your code
 
+
     const genrenew=movies.filter(movie => movie.genre == genre)
     return genrenew
+
 }
 
 function main(){
@@ -36,7 +38,9 @@ function main(){
     console.log(`Only first ten movies:\n `);
     console.log(Object.values(firstTenMovies))
     console.log(`Only Drama movies:\n`);
+
     console.log(Object.values(dramaMovies))
+
 }
 
 main();
