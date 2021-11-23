@@ -17,7 +17,15 @@ function getFirstTenMovies() {
  * @param  {String} genre
  * @returns {Array}
  */
-function getMoviesWithGenre(genre) {}
+function getMoviesWithGenre(genre) {
+  let moviesGenre = [];
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].genre.includes(genre)) {
+      moviesGenre.push(movies[i]);
+    }
+  }
+  return JSON.stringify(moviesGenre);
+}
 
 function main() {
   const firstTenMovies = getFirstTenMovies();
