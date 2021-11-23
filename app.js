@@ -35,7 +35,7 @@ function main(){
     console.log(dramaMovies);
     console.log("######################################");
     console.log("######################################");
-    console.log("Movies with genres Comedy, Drama and Fantasy")
+    console.log("Movies with Comedy, Drama and Fantasy")
     const CDF = getMoviesWithGenre('Comedy, Drama, Fantasy');
     console.log(CDF);
 }
