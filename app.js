@@ -5,7 +5,11 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+    let moviesReturn = []
+    for(let i=0; i<10; i++){
+        moviesReturn.push(movies[i])
+    }
+    return JSON.stringify(moviesReturn)
 }
 
 /**
@@ -14,7 +18,13 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let moviesReturn = []
+    for (let movie of movies){
+        if(movie.genre.includes(genre)){
+            moviesReturn.push(movie)
+        }  
+    }
+    return JSON.stringify(moviesReturn)
 }
 
 function main(){
