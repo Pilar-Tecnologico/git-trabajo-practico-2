@@ -15,11 +15,14 @@ function getFirstTenMovies(){
                                                                         //if I replace just the comma (/,/g), each comma in description will be replaced too.
         first_ten_movies[i] = first_ten_movies[i].replace(/"/g,' ');  //replacing " by a space 
         first_ten_movies[i] = first_ten_movies[i].replace(/[{}]/g,'');  //erasing { and }
-
+        first_ten_movies[i] = first_ten_movies[i].substring(1);  //erasing first space
+        
         // first_ten_movies.push(`Movie ${i+1}:\n${JSON.stringify(movies[i])}\n`);  //copying classmates.
 
+        //I couldn't remove the comma that separates each row of the array when printing in console
+
     }
-    // console.log(Array.isArray(first_ten_movies))  //Is this object an array?
+    // console.log(Array.isArray(first_ten_movies));  //Is this object an array?
 
     return first_ten_movies;
 
@@ -31,10 +34,23 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    
+    let movies_genre = [];
+
+    for (let i=0 ; i<movies.length ; i++){
+        if(JSON.stringify(movies[i]['genre']).includes(genre)){
+            movies_genre[i] = movies[i]['title'] + '\n';
+        }
+    }
+    
+    movies_genre = movies_genre.filter(function(){return true;});
+
+    return movies_genre;
+
 }
 
 function main(){
+    
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
     console.log(`Only first ten movies:\n${firstTenMovies}\n`);
