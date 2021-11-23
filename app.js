@@ -17,7 +17,11 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let mg = movies;
+    let moviesByGenre = mg.filter(movie => {
+       return movie.genre.includes(genre);
+    });
+    return moviesByGenre;
 }
 
 function main(){
@@ -25,7 +29,15 @@ function main(){
     const dramaMovies = getMoviesWithGenre('Drama');
     console.log(`Only first ten movies:\n`);
     console.log(firstTenMovies);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log("######################################");
+    console.log("######################################");
+    console.log(`Only Drama movies:\n`);
+    console.log(dramaMovies);
+    console.log("######################################");
+    console.log("######################################");
+    console.log("Movies with genres Comedy, Drama and Fantasy")
+    const CDF = getMoviesWithGenre('Comedy, Drama, Fantasy');
+    console.log(CDF);
 }
 
 main();
