@@ -18,14 +18,24 @@ return  (First);
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    
+    let getMovies = [];
+    for(let i = 0; i < movies.length; i++) {
+        if(movies[i].genre.includes(genre)){
+            getMovies.push(movies[i])
+            
+        }
+        
+    }
+    return (getMovies)
 }
+
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
     console.log(`Only first ten movies:\n${ JSON.stringify(firstTenMovies)}\n`);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log(`Only Drama movies:\n${ JSON.stringify(dramaMovies)}\n`);
 }
 
 main();
