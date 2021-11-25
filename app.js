@@ -1,7 +1,7 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+the first ten elements of the array
  * @returns {Array}
  */
 function getFirstTenMovies(){
