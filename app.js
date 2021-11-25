@@ -17,7 +17,9 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-      
+        getMovieGen = movies.map((getMovieGen)=>getMovieGen.title || getMovieGen.title)
+        covert1 = JSON.stringify(getMovieGen)
+        return getMovieGen
 }
 
 function main(){
