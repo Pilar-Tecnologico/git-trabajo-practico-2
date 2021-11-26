@@ -5,7 +5,7 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+   return movies.slice(0,9)
 }
 
 /**
@@ -14,7 +14,7 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    return movies.filter(pelicula=>pelicula.genre===genre)
 }
 
 function main(){
