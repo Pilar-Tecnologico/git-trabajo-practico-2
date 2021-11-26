@@ -2,7 +2,7 @@ const movies = require('./movies.json');
 
 /**
  * Complete with a brief definition of what this function should do
- * this function returns the first ten movies from array moviesgit
+ * this function returns the first ten movies from array movies
  * @returns {Array}
  */
 function getFirstTenMovies(){
