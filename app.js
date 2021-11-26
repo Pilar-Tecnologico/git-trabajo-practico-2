@@ -12,6 +12,7 @@ function getFirstTenMovies(){
 
 /**
  * Complete with a brief definition of what this function should do
+ * this function returns a new array using parameter given
  * @param  {String} genre
  * @returns {Array}
  */
