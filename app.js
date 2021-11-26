@@ -23,7 +23,9 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
-  
+    const filter = movies.filter((movie) => movie.genre === genre )
+
+    return filter
 }
 
 function main(){
