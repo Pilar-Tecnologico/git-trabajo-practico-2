@@ -14,7 +14,9 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let genero = []
+    genero = movies.filter( pelicula => pelicula.genre == genre)
+    return JSON.stringify(genero)
 }
 
 function main(){
