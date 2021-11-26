@@ -8,7 +8,9 @@ const movies = require('./movies.json');
  * @returns {Array}
  */
 function getFirstTenMovies(){
-    //complete with your code
+     
+
+    return  movies.splice(0,10)
 }
 
 /**
@@ -21,6 +23,7 @@ function getFirstTenMovies(){
  */
  function getMoviesWithGenre(genre){
     //complete with your code
+  
 }
 
 function main(){
@@ -29,5 +32,6 @@ function main(){
     console.log(`Only first ten movies:\n${firstTenMovies}\n`);
     console.log(`Only Drama movies:\n${dramaMovies}\n`);
 }
+
 
 main();
