@@ -13,7 +13,9 @@ function getFirstTenMovies() {
  * @param  {String} genre
  * @returns {Array}
  */
-function getMoviesWithGenre(genre) {}
+function getMoviesWithGenre(genre) {
+  return movies.filter((item) => item.genre.includes(genre));
+}
 
 function main() {
   const firstTenMovies = getFirstTenMovies();
