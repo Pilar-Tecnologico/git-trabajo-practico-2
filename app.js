@@ -4,7 +4,9 @@ const movies = require("./movies.json");
  * This function returns the first ten items inside movies
  * @returns {Array}
  */
-function getFirstTenMovies() {}
+function getFirstTenMovies() {
+  return movies.slice(0, 10);
+}
 
 /**
  * This function returns the movies that belong in a certain genre
