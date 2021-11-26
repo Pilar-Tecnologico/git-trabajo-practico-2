@@ -17,7 +17,8 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    let moviesGenre = movies.filter(element => element.genre.includes(genre))
+    return JSON.stringify(moviesGenre, null, '\t')
 }
 
 function main(){
