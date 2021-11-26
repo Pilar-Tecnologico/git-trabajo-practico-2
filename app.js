@@ -6,6 +6,8 @@ const movies = require('./movies.json');
  */
 function getFirstTenMovies() {
     //complete with your code
+    const fistTenMovies = movies.slice(0, 10);
+    return JSON.stringify(fistTenMovies);
 }
 
 /**
@@ -15,6 +17,8 @@ function getFirstTenMovies() {
  */
 function getMoviesWithGenre(genre) {
     //complete with your code
+    const moviesWithGenre = movies.filter(m => m.genre === genre);
+    return JSON.stringify(moviesWithGenre);
 }
 
 function main() {
