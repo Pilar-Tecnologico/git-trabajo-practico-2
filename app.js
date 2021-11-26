@@ -17,6 +17,8 @@ function getFirstTenMovies() {
  */
 function getMoviesWithGenre(genre) {
     //complete with your code
+    const moviesWithGenre = movies.filter(m => m.genre === genre);
+    return JSON.stringify(moviesWithGenre);
 }
 
 function main() {
