@@ -4,6 +4,7 @@ const movies = require("./movies.json");
  * This function returns the first ten items inside movies
  * @returns {Array}
  */
+
 function getFirstTenMovies() {
   return movies.slice(0, 10);
 }
@@ -13,6 +14,7 @@ function getFirstTenMovies() {
  * @param  {String} genre
  * @returns {Array}
  */
+
 function getMoviesWithGenre(genre) {
   return movies.filter((item) => item.genre.includes(genre));
 }
