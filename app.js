@@ -14,7 +14,7 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    return movies.filter(pelicula=>pelicula.genre===genre)
 }
 
 function main(){
