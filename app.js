@@ -13,8 +13,8 @@ function getFirstTenMovies(){
  * @param  {String} genre
  * @returns {Array}
  */
- function getMoviesWithGenre(genre){
-    //complete with your code
+function getMoviesWithGenre(genre){
+    return movies.filter(movie => movie.genre.includes(genre));
 }
 
 function main(){
