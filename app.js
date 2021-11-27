@@ -20,7 +20,11 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    
+    movies.filter(gen =>{
+        if(gen.genre == genre)
+        return console.log(gen.title)
+    })
 }
 
 function main(){
