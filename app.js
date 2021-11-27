@@ -4,8 +4,8 @@ const movies = require('./movies.json');
  * take the first ten movies as an object in the app.js file.
  * @returns {Array}
  */
-function getFirstTenMovies(){
-    //complete with your code
+ function getFirstTenMovies(){
+    return movies.slice(0,10);
 }
 
 /**
