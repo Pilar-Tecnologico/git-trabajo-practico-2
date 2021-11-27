@@ -15,7 +15,9 @@ function getFirstTenMovies() {
  * @param  {String} genre
  * @returns {Array}
  */
-
+function getMoviesWithGenre(genre) {
+    return movies.filter((movie => movie.genre == genre))
+}
 
 function main() {
     const firstTenMovies = getFirstTenMovies();
@@ -26,7 +28,11 @@ function main() {
 
     });
 
- 
+    console.log(`Only Drama movies:`);
+    dramaMovies.forEach(movies => {
+        console.log(movies.title)
+
+    });
 }
 
 main();
