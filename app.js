@@ -4,8 +4,8 @@ const movies = require('./movies.json');
  * take the first ten movies as an object in the app.js file.
  * @returns {Array}
  */
-function getFirstTenMovies(){
-    //complete with your code
+ function getFirstTenMovies(){
+    return movies.slice(0,10);
 }
 
 /**
@@ -14,14 +14,14 @@ function getFirstTenMovies(){
  * @returns {Array}
  */
  function getMoviesWithGenre(genre){
-    //complete with your code
+    return movies.filter((gen)=> gen.genre == genre);
 }
 
 function main(){
     const firstTenMovies = getFirstTenMovies();
     const dramaMovies = getMoviesWithGenre('Drama');
-    console.log(`Only first ten movies:\n${firstTenMovies}\n`);
-    console.log(`Only Drama movies:\n${dramaMovies}\n`);
+    console.log("Only first ten movies:\n",firstTenMovies,"\n");
+    console.log("Only Drama movies:\n",dramaMovies,"\n");
 }
 
 
