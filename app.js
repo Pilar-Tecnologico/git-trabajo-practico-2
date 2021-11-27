@@ -1,7 +1,7 @@
 const movies = require('./movies.json');
 
 /**
- * Complete with a brief definition of what this function should do
+ * take the first ten movies as an object in the app.js file.
  * @returns {Array}
  */
 function getFirstTenMovies(){
@@ -9,7 +9,7 @@ function getFirstTenMovies(){
 }
 
 /**
- * Complete with a brief definition of what this function should do
+* create a filtering arrayd with the specified genre of the movies using the .filter () method that returns a new array.
  * @param  {String} genre
  * @returns {Array}
  */
@@ -23,5 +23,6 @@ function main(){
     console.log(`Only first ten movies:\n${firstTenMovies}\n`);
     console.log(`Only Drama movies:\n${dramaMovies}\n`);
 }
+
 
 main();
